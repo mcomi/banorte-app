@@ -1,0 +1,7 @@
+{
+  "prestamoPreautorizado":
+    {
+      "monto": 600000,
+      "plazos": ["48","60","72"]
+    }
+}

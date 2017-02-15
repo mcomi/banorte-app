@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>banorte app</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <div class="section no-pad-bot form-header" id="index-banner">
+        <div class="layer">
+            <div class="container">
+                <div class="landing-logo-container"><img src="./images/logo.png" alt=""></div>
+                <div class="header-right-nav">
+                    <ul class="nav-links">
+                        <li>Salvado automático <span class="fa-stack"><i class="fa fa-cloud fa-stack-2x"></i> <i class="fa fa-check fa-stack-1x"></i></span></li>
+                        <li>Tu URL: <a href="#">KSM.os/ER56</a></li>
+                    </ul>
+                </div><br>
+                <h1 class="form-welcome center white-text">Bienvenido <span>Distribuidora Bellamina</span></h1>
+                <div id="landing-text" class="row center">
+                    <p class="col s12 light white-text">Quisque pulvinar finibus turpis, nec interdum dolor efficitur eget. Cras at magna sed lorem faucibus viverra.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="row form-prestamo">
+            <div class="col s12 m6 offset-m3">
+                <div class="card">
+                    <div class="card-content"><span class="card-title">Preautorizado PYME</span>
+                        <form class="col s12 form-text-input">
+                            <div class="row">
+                                <div class="input-field col s12"><input id="mountInput" placeholder="1,800,000.00" type="text" pattern="[0-9]*"><label for="amount">Monto</label><i class="fa fa-question-circle tooltipped" data-position="right" data-delay="50" data-tooltip="Solo puedes disminuir el monto"
+                                        aria-hidden="true"></i></div>
+                                <div class="col s12"><label>Plazo</label><select id="selectPlazo" class="browser-default"><option value="" disabled="disabled" selected="selected">Elige tu plazo</option><option value="48">48 meses</option><option value="60">60 meses</option><option value="72">70 meses</option></select></div>
+                                <div
+                                    class="input-field col s12"><input placeholder="3,000.00" id="monthlyPayment" type="text"><label for="monthlyPayment">Pago mensual</label></div>
+                            <div class="col s12">
+                                <p><input id="terminosCondiciones" class="with-gap red terms" name="terminos" type="radio"><label for="terminosCondiciones">Acepto <a class="terms" href="">condiciones de servicio</a> y <a class="terms" href="">aviso de privacidad</a></label></p>
+                            </div>
+                            <div class="col s12"><a id="btnSubmitPreautorizado" href="form.html" class="waves-effect waves-light grey lighten-2 btn btn-submit disabled">Siguiente</a></div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="fixed-action-btn toolbar"><a class="btn-help btn-large left"><i class="fa fa-question" aria-hidden="true"></i> <span>Ayuda</span></a>
+        <ul>
+            <li class="waves-effect waves-light"><a href="tel:018002233">Llámanos: <strong>01 800 2233</strong></a></li>
+            <li class="waves-effect waves-light"><a href="whatsapp://send?text=Hola!&phone=+55 6644 3456">Whatsapp: <strong>55 6644 3456</strong></a></li>
+            <li class="waves-effect waves-light"><a href="#!">Tu número de folio: <strong>ER45 1230</strong></a></li>
+        </ul>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container"><a class="grey-text text-lighten-4 right" href="#!">Términos Legales | 2017 Grupo Financiero Banorte. Derechos Reservados.</a></div>
+        </div>
+    </footer>
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/cotizador.js"></script>
+</body>
+
+</html>

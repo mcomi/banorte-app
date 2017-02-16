@@ -8,7 +8,7 @@ fetch('./folios.json').then(function (r) {
 }).then(function (data) {
   return folios = data.folios;
 }).catch(function (e) {
-  return console.log("error");
+  return console.log('error');
 });
 
 var searchInput = document.getElementById('search');

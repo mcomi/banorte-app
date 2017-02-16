@@ -40,21 +40,28 @@
                     <div class="card-content"><span class="card-title">Preautorizado PYME</span>
                         <form class="col s12 form-text-input">
                             <div class="row">
-                                <div class="input-field col s12"><input id="mountInput" placeholder="1,800,000.00" type="text" pattern="[0-9]*"><label for="amount">Monto</label><i class="fa fa-question-circle tooltipped" data-position="right" data-delay="50" data-tooltip="Solo puedes disminuir el monto"
-                                        aria-hidden="true"></i></div>
-                                <div class="col s12"><label>Plazo</label><select id="selectPlazo" class="browser-default"><option value="" disabled="disabled" selected="selected">Elige tu plazo</option><option value="48">48 meses</option><option value="60">60 meses</option><option value="72">70 meses</option></select></div>
-                                <div
-                                    class="input-field col s12"><input placeholder="3,000.00" id="monthlyPayment" type="text"><label for="monthlyPayment">Pago mensual</label></div>
-                            <div class="col s12">
-                                <p><input id="terminosCondiciones" class="with-gap red terms" name="terminos" type="radio"><label for="terminosCondiciones">Acepto <a class="terms" href="">condiciones de servicio</a> y <a class="terms" href="">aviso de privacidad</a></label></p>
+                                <div class="input-field col s12"><input id="mountInput" placeholder="1,800,000.00" type="text" pattern="[0-9]*"><label for="amount" data-error="Esta cantidad excede el monto preautorizado">Monto</label><i class="fa fa-question-circle tooltipped" data-position="right"
+                                        data-delay="50" data-tooltip="Solo puedes disminuir el monto" aria-hidden="true"></i></div>
+                                <div class="col s12">
+                                    <div id="dd" class="wrapper-dropdown-1" tabindex="1"><span>Plazo</span>
+                                        <ul class="dropdown">
+                                            <li><a href="#">48 meses</a></li>
+                                            <li><a href="#">60 meses</a></li>
+                                            <li><a href="#">72 meses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12"><input placeholder="3,000.00" id="monthlyPayment" type="text"><label for="monthlyPayment">Pago mensual</label></div>
+                                <div class="col s12">
+                                    <p><input id="terminosCondiciones" class="with-gap red terms" name="terminos" type="radio" disabled="disabled"><label for="terminosCondiciones">Acepto <a class="terms" href="">condiciones de servicio</a> y <a class="terms" href="">aviso de privacidad</a></label></p>
+                                </div>
+                                <div class="col s12"><a id="btnSubmitPreautorizado" href="form.html" class="waves-effect waves-light grey lighten-2 btn btn-submit disabled">Siguiente</a></div>
                             </div>
-                            <div class="col s12"><a id="btnSubmitPreautorizado" href="form.html" class="waves-effect waves-light grey lighten-2 btn btn-submit disabled">Siguiente</a></div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="fixed-action-btn toolbar"><a class="btn-help btn-large left"><i class="fa fa-question" aria-hidden="true"></i> <span>Ayuda</span></a>
         <ul>

@@ -1,31 +1,35 @@
-$('.carousel.carousel-slider').carousel({fullWidth: true}); // habilito carousel para la seccion de testimonios
+'use strict';
 
-let folios;
-fetch('./folios.json').then(r => r.json())
-  .then(data => folios = data.folios)
-  .catch(e => console.log('error'))
+$('.carousel.carousel-slider').carousel({ fullWidth: true }); // habilito carousel para la seccion de testimonios
 
-const searchInput = document.getElementById('search');
-const btnConfirm = document.getElementById('btnConfirmFolio');
+var folios = void 0;
+fetch('./folios.json').then(function (r) {
+  return r.json();
+}).then(function (data) {
+  return folios = data.folios;
+}).catch(function (e) {
+  return console.log('error');
+});
 
-let validFolio = false;
+var searchInput = document.getElementById('search');
+var btnConfirm = document.getElementById('btnConfirmFolio');
 
-function checkFolio () {
+var validFolio = false;
 
-  if(folios.includes(this.value)) {
+function checkFolio() {
+
+  if (folios.includes(this.value)) {
     validFolio = true;
-    searchInput.classList.add('valid')
-    searchInput.classList.remove('invalid')
-    btnConfirm.classList.remove('disabled') // habilito el boton de confirmar
-  }
-  else {
+    searchInput.classList.add('valid');
+    searchInput.classList.remove('invalid');
+    btnConfirm.classList.remove('disabled'); // habilito el boton de confirmar
+  } else {
     validFolio = false;
-    searchInput.classList.add('invalid')
-    searchInput.classList.remove('valid')
-    btnConfirm.classList.add('disabled')
+    searchInput.classList.add('invalid');
+    searchInput.classList.remove('valid');
+    btnConfirm.classList.add('disabled');
   }
-
 }
 
-searchInput.addEventListener('change', checkFolio)
-searchInput.addEventListener('keyup', checkFolio)
+searchInput.addEventListener('change', checkFolio);
+searchInput.addEventListener('keyup', checkFolio);

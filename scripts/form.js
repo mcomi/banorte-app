@@ -84,6 +84,8 @@ function simularTiempo() {
   }, 40000);
 }
 
+setTimeout(() => simularTiempo() , 3000)
+
 $('#ventas').maskMoney();
 
 chipsSector.forEach(function (chipSector) {

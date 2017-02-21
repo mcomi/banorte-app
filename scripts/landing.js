@@ -1,6 +1,10 @@
 'use strict';
 
-$('.carousel.carousel-slider').carousel({ fullWidth: true }); // habilito carousel para la seccion de testimonios
+$('.carousel.carousel-slider').carousel({ fullWidth: true, padding: 200 }, setTimeout(autoplay, 4500));
+function autoplay() {
+  $('.carousel').carousel('next');
+  setTimeout(autoplay, 4500);
+}
 
 var folios = void 0;
 
@@ -40,6 +44,7 @@ function checkFolio() {
     searchInput.classList.add('valid');
     searchInput.classList.remove('invalid');
     btnConfirm.classList.remove('disabled'); // habilito el boton de confirmar
+    btnConfirm.classList.add('active');
   } else {
     validFolio = false;
     searchInput.classList.add('invalid');

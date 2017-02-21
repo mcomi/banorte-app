@@ -56,7 +56,10 @@ function calculateMonthlyPayment(plazo) {
 
 function checkFormStatus() {
   if (this.checked) {
-    if (monthlyPayment.value != '') btnSubmitPreautorizado.classList.remove('disabled');
+    if (monthlyPayment.value != '') {
+      btnSubmitPreautorizado.classList.remove('disabled');
+      btnSubmitPreautorizado.classList.add('active');
+    }
   }
 }
 
@@ -83,7 +86,7 @@ DropDown.prototype = {
       obj.index = opt.index();
       var plazo = obj.val.replace(/\D+/g, '');
       calculateMonthlyPayment(plazo);
-      obj.placeholder.text('Plazos ' + obj.val);
+      obj.placeholder.text('' + obj.val);
     });
   },
   getValue: function getValue() {

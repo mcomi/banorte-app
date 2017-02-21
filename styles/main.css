@@ -1276,6 +1276,9 @@ p.options {
   .active span {
     display: none;
   }
+  .dropdown-content li>a, .dropdown-content li>span {
+    color: #FFA300;
+}
   .fixed-action-btn.toolbar ul li {
     margin: 0 10%;
   }

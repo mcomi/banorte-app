@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/font-awesome-animation.min.css">
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/vendor/modernizr.js"></script>
@@ -21,7 +20,7 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo"><img src="./images/logo.png" alt=""></a>
             <ul id="nav-mobile" class="right">
-                <li>Salvado automático <span class="fa-stack fa-lg"><i class="fa fa-cloud fa-stack-2x"></i> <i id="saveAnimatedIcon" class="fa fa-check fa-stack-1x"></i></span></li>
+                <li>Salvado automático <span class="fa-stack fa-lg"><i class="fa fa-cloud fa-stack-2x"></i> <i class="fa fa-check fa-stack-1x"></i></span></li>
                 <li>Tu URL: <a href="#">KSM.os/ER56</a></li>
                 <li class="nav-profile">Bienvenida <span>Distribuidora Bellamina</span></li>
             </ul>
@@ -33,9 +32,9 @@
                 <div class="col l6 offset-l3 s12">
                     <ul class="progress-indicator">
                         <li class="completed"><span class="bubble"><i class="fa fa-check"></i></span>1</li>
-                        <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>2</span>
+                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>2</span>
                         </li>
-                        <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>3</span>
+                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>3</span>
                         </li>
                         <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>4</span>
                         </li>
@@ -45,13 +44,13 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row header-top">
+                <div class="row form-administrativos">
                     <div class="col m6">
-                        <p class="form-step-title">Datos generales <span>del solicitante</span></p>
+                        <p class="form-step-title">Aspectos <span>administrativos</span></p>
                     </div>
                     <div class="col m6">
                         <div class="progress-circle">
-                            <div class="c100 p0 small"><span>0%</span><span class="progress-circle-title">Registro<br>completado</span>
+                            <div id="circuloAvance" class="c100 p40 small" data-porcentaje="40"><span>40%</span><span class="progress-circle-title">Registro<br>completado</span>
                                 <div class="slice">
                                     <div class="bar"></div>
                                     <div class="fill"></div>
@@ -60,53 +59,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row form-administrativos">
                     <div class="col m6 s12">
-                        <ul class="client-details">
-                            <li>Persona moral</li>
-                            <li>Distribuidora Bellamina S.A. de C.V.</li>
-                            <li>DBL160517MY4</li>
-                            <li>miriam@bellamina.com</li>
-                        </ul>
-                        <p class="caption">Sector de la empresa</p>
-                        <div class="sector">
-                            <div class="chip" data-sector="comercio">Comercio</div>
-                            <div class="chip" data-sector="industrial">Industrial</div>
-                            <div class="chip" data-sector="servicios">Servicios</div>
+                        <h6>Contacto con la empresa</h6>
+                        <div class="input-field col s12">
+                            <p>El nombre de contacto con la empresa es el mismo que el solicitante (PFAE)</p>
+                            <p class="options"><input class="with-gap" name="nombreContacto" type="radio" id="yes"><label for="yes">Si</label><input class="with-gap" name="nombreContacto" type="radio" id="no"><label for="no">No</label></p>
                         </div>
-                        <div class="actividad">
-                            <p class="caption">Actividad específica</p>
-                            <div class="chip" data-actividad="1">Opción 1</div>
-                            <div class="chip" data-actividad="2">Opción 2</div>
-                            <div class="chip" data-actividad="3">Opción 3</div>
-                        </div>
-                        <div class="empleados">
-                            <p class="caption">Número de empleados</p>
-                            <div class="chip" data-empleados="-10">1-10</div>
-                            <div class="chip" data-empleados="+10">11-100</div>
-                            <div class="chip" data-empleados="+100">más de 100</div>
-                        </div>
-                        <div class="input-field col s12"><input id="ventas" type="text" data-prefix="$" data-thousands="," data-decimal="."><label for="ventas">Ventas anuales último ejercicio fiscal (ej. $1,500,000.00)</label></div>
+                        <div class="input-field col s12"><input type="text" id="nombreContactoEmpresa"><label for="nombreContactoEmpresa">Nombre contacto con la empresa</label></div>
+                        <div class="input-field col s12"><input type="number" id="cargo"><label for="cargo">Cargo o puesto</label></div>
+                        <div class="input-field col s12"><input type="number" id="telOficina"><label for="telOficina">Teléfono de oficina (con lada)</label></div>
                     </div>
                     <div class="col m6 s12">
-                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Años de experiencia en el sector</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
-                        <div
-                            class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Edad de la empresa o negocio</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
-                    <div
-                        class="input-field col s12"><input type="date" placeholder="Fecha de constitución" class="datepicker"></div>
-                <div class="input-field col s12"><input id="lugarConstitucion" type="text"><label for="lugarConstitucion">Lugar de constitución</label></div>
-                <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Duración de la sociedad</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
-                <div class="input-field col s12"><input type="text" id="folioMercantil"><label for="folioMercantil">Folio mercantil (opcional)</label></div>
-                <div class="input-field col s12">
-                    <p>Relación o parentesco en primer grado con empleado de la institución o cónyuge de este</p><i class="fa fa-question-circle tooltipped help-law" data-position="bottom" data-delay="30" data-tooltip="Art.106 Ley de Instituciones de Crédito"
-                        aria-hidden="true"></i>
-                    <p class="options"><input class="with-gap" name="relacion" type="radio" id="yes"><label for="yes">Si</label><input class="with-gap" name="relacion" type="radio" id="no"><label for="no">No</label></p>
+                        <h6>Contacto con la empresa</h6>
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Representante legal</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Cargo o puesto</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Teléfono de oficina (con lada)</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                    </div>
+                </div>
+                <div class="row form-administrativos">
+                    <h6>Socios principales</h6>
+                    <div class="col m10 s12">
+                        <div class="col m12 s12">
+                            <div class="input-field col m4 s12"><input type="text" id="apellidoPaterno"><label for="razonSocial">Nombre o razón social</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="apellidoPaterno"><label for="apellidoPaterno">Apellido paterno</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="apellidoMaterno"><label for="apellidoMaterno">Apellido materno</label></div>
+                        </div>
+                        <div class="col m12 s12">
+                            <div class="input-field col m4 s12"><input type="text" id="rfc"><label for="rfc">RFC</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="puesto"><label for="puesto">Puesto en la empresa</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="perAccionario"><label for="perAccionario">% Accionario</label></div>
+                        </div>
+                    </div>
+                    <div class="col m2 s12"><a class="btn-floating btn-large waves-effect waves-light btn-banorte"><i class="material-icons">add</i></a></div>
                 </div>
             </div>
+            <div class="row center-align"><a href="form.html" class="waves-effect waves-light grey lighten-2 btn btn-submit btn-submit-step">Siguiente</a></div>
         </div>
-    </div>
-    <div class="row center-align"><a href="form-domicilio.html" class="waves-effect waves-light grey lighten-2 btn btn-submit btn-submit-step">Siguiente</a></div>
-    </div>
     </div>
     <div class="fixed-action-btn toolbar"><a class="btn-help btn-large left"><i class="fa fa-question" aria-hidden="true"></i> <span>Ayuda</span></a>
         <ul class="help-med-and-up">
@@ -143,8 +132,7 @@
     </script>
     <script src="scripts/vendor.js"></script>
     <script src="scripts/plugins.js"></script>
-    <script src="scripts/jquery.maskMoney.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form-administrativos.js"></script>
 </body>
 
 </html>

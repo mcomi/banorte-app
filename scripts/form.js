@@ -84,7 +84,9 @@ function simularTiempo() {
   }, 40000);
 }
 
-setTimeout(() => simularTiempo() , 3000)
+setTimeout(function () {
+  return simularTiempo();
+}, 3000);
 
 $('#ventas').maskMoney();
 

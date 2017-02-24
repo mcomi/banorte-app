@@ -1,36 +1,34 @@
 'use strict';
 
-$('.carousel.carousel-slider').carousel({ fullWidth: true }); // habilito carousel para la seccion de testimonios
+var mount = void 0;
+/* FORMA */
+function formatCurrency() {
+  //number-format the user input
+  mount = this.value;
+  this.value = parseFloat(this.value.replace(/,/g, '')).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
 
-var folios = void 0;
-fetch('./folios.json').then(function (r) {
-  return r.json();
-}).then(function (data) {
-  return folios = data.folios;
-}).catch(function (e) {
-  return console.log('error');
-});
-
-var searchInput = document.getElementById('search');
-var btnConfirm = document.getElementById('btnConfirmFolio');
-
-var validFolio = false;
-
-function checkFolio() {
-
-  if (folios.includes(this.value)) {
-    validFolio = true;
-    searchInput.classList.add('valid');
-    searchInput.classList.remove('invalid');
-    btnConfirm.classList.remove('disabled'); // habilito el boton de confirmar
+function checkMount() {
+  if (mount.length > 6) {
+    this.classList.remove('valid');
+    this.classList.add('invalid');
   } else {
-    validFolio = false;
-    searchInput.classList.add('invalid');
-    searchInput.classList.remove('valid');
-    btnConfirm.classList.add('disabled');
+    this.classList.remove('invalid');
+    this.classList.add('valid');
   }
 }
 
-searchInput.addEventListener('change', checkFolio);
-searchInput.addEventListener('keyup', checkFolio);
-//# sourceMappingURL=landing.js.map
+function calculaPagoMensual() {
+  var pago = mount / Number(this.value);
+  monthlyPayment.value = pago;
+}
+
+var mountInput = document.getElementById('mountInput');
+var selectPlazo = document.getElementById('selectPlazo');
+var monthlyPayment = document.getElementById('monthlyPayment');
+console.log(mountInput);
+mountInput.addEventListener('change', formatCurrency);
+mountInput.addEventListener('change', checkMount);
+monthlyPayment.addEventListener('change', formatCurrency);
+selectPlazo.addEventListener('change', calculaPagoMensual);
+//# sourceMappingURL=main.js.map

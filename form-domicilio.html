@@ -34,7 +34,7 @@
                         <li class="completed"><span class="bubble"><i class="fa fa-check"></i></span>1</li>
                         <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>2</span>
                         </li>
-                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>3</span>
+                        <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>3</span>
                         </li>
                         <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>4</span>
                         </li>
@@ -44,13 +44,13 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row form-administrativos">
+                <div class="row form-domicilio">
                     <div class="col m6">
-                        <p class="form-step-title">Aspectos <span>administrativos</span></p>
+                        <p class="form-step-title">Domicilio <span>fiscal</span></p>
                     </div>
                     <div class="col m6">
                         <div class="progress-circle">
-                            <div id="circuloAvance" class="c100 p40 small" data-porcentaje="40"><span>40%</span><span class="progress-circle-title">Registro<br>completado</span>
+                            <div id="circuloAvance" class="c100 p25 small" data-porcentaje="25"><span>25%</span><span class="progress-circle-title">Registro<br>completado</span>
                                 <div class="slice">
                                     <div class="bar"></div>
                                     <div class="fill"></div>
@@ -59,42 +59,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="row form-administrativos">
-                    <div class="col m6 s12">
-                        <h6>Contacto con la empresa</h6>
-                        <div class="input-field col s12">
-                            <p>El nombre de contacto con la empresa es el mismo que el solicitante (PFAE)</p>
-                            <p class="options"><input class="with-gap" name="nombreContacto" type="radio" id="yes"><label for="yes">Si</label><input class="with-gap" name="nombreContacto" type="radio" id="no"><label for="no">No</label></p>
+                <div class="row form-domicilio">
+                    <div class="col s12">
+                        <div class="input-field col s12"><i class="fa fa-question-circle tooltipped help-tip" data-position="bottom" data-delay="50" data-tooltip="Menor a tres meses a la fecha de emisión y sin adeudos pendientes" aria-hidden="true"></i>
+                            <p>Comprobante de domicilio <a class="waves-effect waves-light btn btn-upload" href="#modalComprobanteDomicilio"><i class="fa fa-cloud-upload right"></i><span class="btn-text-mob-and-up">Subir documento</span></a></p>
                         </div>
-                        <div class="input-field col s12"><input type="text" id="nombreContactoEmpresa"><label for="nombreContactoEmpresa">Nombre contacto con la empresa</label></div>
-                        <div class="input-field col s12"><input type="number" id="cargo"><label for="cargo">Cargo o puesto</label></div>
-                        <div class="input-field col s12"><input type="number" id="telOficina"><label for="telOficina">Teléfono de oficina (con lada)</label></div>
                     </div>
                     <div class="col m6 s12">
-                        <h6>Contacto con la empresa</h6>
-                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Representante legal</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
-                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Cargo o puesto</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
-                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Teléfono de oficina (con lada)</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12"><input type="text" id="calle-fiscal"><label for="calle-fiscal">Calle Nº Ext Nº Int</label></div>
+                        <div class="input-field col s12"><input type="text" id="colonia-fiscal"><label for="colonia-fiscal">Colonia</label></div>
+                        <div class="input-field col s12"><input type="text" id="delegacion-fiscal"><label for="delegacion-fiscal">Delegación / Municipio</label></div>
+                    </div>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12"><input type="text" id="estado-fiscal"><label for="estado-fiscal">Estado</label></div>
+                        <div class="input-field col s12"><input type="text" id="codigoPostal-fiscal"><label for="codigoPostal-fiscal">Código postal</label></div>
+                        <div class="input-field col s12"><input type="text" id="telefono-fiscal"><label for="telefono-fiscal">Teléfono</label></div>
                     </div>
                 </div>
-                <div class="row form-administrativos">
-                    <h6>Socios principales</h6>
-                    <div class="col m10 s12">
-                        <div class="col m12 s12">
-                            <div class="input-field col m4 s12"><input type="text" id="apellidoPaterno"><label for="razonSocial">Nombre o razón social</label></div>
-                            <div class="input-field col m4 s12"><input type="text" id="apellidoPaterno"><label for="apellidoPaterno">Apellido paterno</label></div>
-                            <div class="input-field col m4 s12"><input type="text" id="apellidoMaterno"><label for="apellidoMaterno">Apellido materno</label></div>
-                        </div>
-                        <div class="col m12 s12">
-                            <div class="input-field col m4 s12"><input type="text" id="rfc"><label for="rfc">RFC</label></div>
-                            <div class="input-field col m4 s12"><input type="text" id="puesto"><label for="puesto">Puesto en la empresa</label></div>
-                            <div class="input-field col m4 s12"><input type="text" id="perAccionario"><label for="perAccionario">% Accionario</label></div>
+                <div class="row">
+                    <div class="col m6">
+                        <p class="form-step-title">Domicilio <span>comercial</span></p>
+                    </div>
+                </div>
+                <div class="row form-domicilio">
+                    <div class="col s12">
+                        <div class="input-field col s12"><i class="fa fa-question-circle tooltipped help-tip" data-position="bottom" data-delay="50" data-tooltip="Menor a tres meses a la fecha de emisión y sin adeudos pendientes" aria-hidden="true"></i>
+                            <p>Comprobante de domicilio <a class="waves-effect waves-light btn btn-upload" href="#modalComprobanteDomicilio"><i class="fa fa-cloud-upload right"></i><span class="btn-text-mob-and-up">Subir documento</span></a></p>
                         </div>
                     </div>
-                    <div class="col m2 s12"><a class="btn-floating btn-large waves-effect waves-light btn-banorte"><i class="material-icons">add</i></a></div>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12">
+                            <p>¿El negocio se desarrolla en el mismo domicilio fiscal?</p>
+                            <p class="options"><input class="with-gap" name="relacion" type="radio" id="yes"><label for="yes">Si</label><input class="with-gap" name="relacion" type="radio" id="no"><label for="no">No</label></p>
+                        </div>
+                        <div class="input-field col s12"><input type="text" id="calle-comercial"><label for="calle-comercial">Calle Nº Ext Nº Int</label></div>
+                        <div class="input-field col s12"><input type="text" id="colonia-comercial"><label for="colonia-comercial">Colonia</label></div>
+                        <div class="input-field col s12"><input type="text" id="delegacion-comercial"><label for="delegacion-comercial">Delegación / Municipio</label></div>
+                    </div>
+                    <div class="col m6 s12"><br>
+                        <div class="input-field col s12"><input type="text" id="estado-comercial"><label for="estado-comercial">Estado</label></div>
+                        <div class="input-field col s12"><input type="text" id="codigoPostal-comercial"><label for="codigoPostal-comercial">Código postal</label></div>
+                        <div class="input-field col s12"><input type="text" id="telefono-comercial"><label for="telefono-comercial">Teléfono</label></div>
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Tiempo de residencia</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                    </div>
                 </div>
             </div>
-            <div class="row center-align"><a href="form.html" class="waves-effect waves-light grey lighten-2 btn btn-submit btn-submit-step">Siguiente</a></div>
+            <div class="row center-align"><a href="form-administrativos.html" class="waves-effect waves-light grey lighten-2 btn btn-submit btn-submit-step">Siguiente</a></div>
         </div>
     </div>
     <div class="fixed-action-btn toolbar"><a class="btn-help btn-large left"><i class="fa fa-question" aria-hidden="true"></i> <span>Ayuda</span></a>
@@ -108,6 +118,49 @@
             <li class="waves-effect waves-light"><a href="whatsapp://send?text=Hola!&phone=+55 6644 3456"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
             <li class="waves-effect waves-light"><a href="#!">Tú folio: <strong>ER45 1230</strong></a></li>
         </ul>
+    </div>
+    <div id="modalComprobanteDomicilio" class="modal medium">
+        <div class="modal-content">
+            <div class="row">
+                <div id="stepDomicilio" class="col m6 s6 inProcess">
+                    <ul class="progress-bullet">
+                        <li class="completed"><span class="bubble clickable" onclick="renderFotoFrente()"><i class="fa fa-check"></i></span></li>
+                        <li>1. Tipo de comprobante de domicilio</li>
+                    </ul>
+                </div>
+                <div id="stepFotoFrente" class="col m6 s6">
+                    <ul class="progress-bullet">
+                        <li><span class="bubble clickable" onclick="renderFotoFrente()"><i class="fa fa-circle"></i></span></li>
+                        <li>2. Foto de frente</li>
+                    </ul>
+                </div>
+                <div id="contentModalSubeComprobanteYDomicilio">
+                    <div id="comprobante">
+                        <div class="col m6 s6"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Recibo de luz</a> <a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Boleta Agua</a></div>
+                        <div class="col m6 s6"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Teléfono</a> <a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Boleta Predial</a></div>
+                    </div>
+                    <div id="fotoFrente" class="hide">
+                        <div class="row">
+                            <div class="col m4 s12"><a onclick="cerrarModalComprobanteAbreSMS()" class="waves-effect waves-light btn btn-submit btn-banorte">Captura con Smartphone <img src="./images/phone_material.png" alt=""></a></div>
+                            <div class="col m4 s12"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Captura con webcam <img src="./images/video_material.png" alt=""></a></div>
+                            <div class="col m4 s12"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Sube desde tu PC <img src="./images/upload_material.png" alt=""></a></div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align wrong"><i class="fa fa-close"></i> Sin dedos</p>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align correct"><i class="fa fa-check"></i> Legible</p>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align correct"><i class="fa fa-check"></i> Orientación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalEnvioSMS" class="modal small">
+        <div class="modal-content center-align"><input id="celPhoneInput" type="text" placeholder="Celular"> <a href="form.html" class="waves-effect waves-light btn btn-submit sms btn-banorte">Enviar SMS</a></div>
     </div>
     <footer class="page-footer">
         <div class="footer-copyright">

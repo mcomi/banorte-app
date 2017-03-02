@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>banorte app</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="./images/logo.png" alt=""></a>
+            <ul id="nav-mobile" class="right">
+                <li>Salvado automático <span class="fa-stack fa-lg"><i class="fa fa-cloud fa-stack-2x"></i> <i class="fa fa-check fa-stack-1x"></i></span></li>
+                <li>Tu URL: <a href="#">KSM.os/ER56</a></li>
+                <li class="nav-profile">Bienvenida <span>Distribuidora Bellamina</span></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="section form">
+            <div id="step-bar" class="row">
+                <div class="col l6 offset-l3 s12">
+                    <ul class="progress-indicator">
+                        <li class="completed"><span class="bubble"><i class="fa fa-check"></i></span>1</li>
+                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>2</span>
+                        </li>
+                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>3</span>
+                        </li>
+                        <li class="completed"><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span>4</span>
+                        </li>
+                        <li><span class="bubble"><span class="bubble"><i class="fa fa-check"></i></span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row form-domicilio">
+                    <div class="col m6">
+                        <p class="form-step-title">Garantía</p>
+                    </div>
+                    <div class="col m6">
+                        <div class="progress-circle">
+                            <div id="circuloAvance" class="c100 p75 small" data-porcentaje="75"><span>75%</span><span class="progress-circle-title">Registro<br>completado</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-garantia">
+                    <h6>Solicitud de crédito</h6>
+                    <div class="col m12 s12">
+                        <div class="col m12 s12">
+                            <div class="input-field col m4 s12"><input type="text" id="tipoCredito"><label for="tipoCredito">Tipo de crédito</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="montoCredito"><label for="montoCredito">Monto de crédito solicitado</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="plazoCredito"><label for="plazoCredito">Plazo</label></div>
+                        </div>
+                        <div class="col m12 s12">
+                            <div class="input-field col m4 s12"><input type="text" id="periodoGracia"><label for="periodoGracia">Período de gracia</label></div>
+                            <div class="input-field col m4 s12"><input type="text" id="destinoCredito"><label for="destinoCredito">Destino</label></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-garantia">
+                    <h6>Datos del obligado solitario <span class="title-description">(Principal accionista)</span></h6>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12">
+                            <p>¿Se contará con Obligado Solidario y/o Fiador?</p>
+                            <p class="options"><input class="with-gap" name="paObligadoSolidario" type="radio" id="yes1"><label for="yes1">Si</label><input class="with-gap" name="paObligadoSolidario" type="radio" id="no1"><label for="no1">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Tipo de persona</p>
+                            <p class="options"><input class="with-gap" name="tipoPersona" type="radio" id="pa-pm"><label for="pa-pm">PM</label><input class="with-gap" name="tipoPersona" type="radio" id="pa-pf"><label for="pa-pf">PF</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Deseas copiar la información del principal accionista</p>
+                            <p class="options"><input class="with-gap" name="copiarAccionista" type="radio" id="yes2"><label for="yes2">Si</label><input class="with-gap" name="copiarAccionista" type="radio" id="no2"><label for="no2">No</label></p>
+                        </div>
+                    </div>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Tipo de domicilio</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12">
+                            <p>Detalle del patrimonio del obligado solidario<br>¿Cuenta con bienes inmuebles?</p>
+                            <p class="options"><input class="with-gap" name="bienesInmuebles" type="radio" id="yes3"><label for="yes3">Si</label><input class="with-gap" name="bienesInmuebles" type="radio" id="no3"><label for="no3">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>El obligado solidario y/o fiador es accionista u obligado solidario de la empresa o PFAE?</p>
+                            <p class="options"><input class="with-gap" name="obligadoEsAccionista" type="radio" id="yes4"><label for="yes4">Si</label><input class="with-gap" name="obligadoEsAccionista" type="radio" id="no4"><label for="no4">No</label></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-garantia">
+                    <h6>Datos del fiador solidario <span class="title-description">(Adicional al principal accionista)</span></h6>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12">
+                            <p>¿Se contará con un segundo Obligado Solidario y/o Fiador?</p>
+                            <p class="options"><input class="with-gap" name="obligadoSolidario2" type="radio" id="yes5"><label for="yes5">Si</label><input class="with-gap" name="obligadoSolidario2" type="radio" id="no5"><label for="no5">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Tipo de persona</p>
+                            <p class="options"><input class="with-gap" name="tipoPersona2" type="radio" id="pm2"><label for="pm2">PM</label><input class="with-gap" name="tipoPersona2" type="radio" id="pf2"><label for="pf2">PF</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Deseas copiar la información del principal accionista</p>
+                            <p class="options"><input class="with-gap" name="copiarAccionista2" type="radio" id="yes6"><label for="yes6">Si</label><input class="with-gap" name="copiarAccionista2" type="radio" id="no6"><label for="no6">No</label></p>
+                        </div>
+                    </div>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Tipo de domicilio</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12">
+                            <p>Detalle del patrimonio del obligado solidario<br>¿Cuenta con bienes inmuebles?</p>
+                            <p class="options"><input class="with-gap" name="bienesInmuebles2" type="radio" id="yes7"><label for="yes7">Si</label><input class="with-gap" name="bienesInmuebles2" type="radio" id="no7"><label for="no7">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>El obligado solidario y/o fiador es accionista u obligado solidario de la empresa o PFAE?</p>
+                            <p class="options"><input class="with-gap" name="obligadoEsAccionista2" type="radio" id="yes8"><label for="yes8">Si</label><input class="with-gap" name="obligadoEsAccionista2" type="radio" id="no8"><label for="no8">No</label></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-garantia">
+                    <h6>Datos del fiador solidario <span class="title-description">(Adicional al principal accionista)</span></h6>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12">
+                            <p>¿Se contará con un segundo Obligado Solidario y/o Fiador?</p>
+                            <p class="options"><input class="with-gap" name="obligadoSolidario3" type="radio" id="yes9"><label for="yes9">Si</label><input class="with-gap" name="obligadoSolidario3" type="radio" id="no9"><label for="no9">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Tipo de persona</p>
+                            <p class="options"><input class="with-gap" name="tipoPersona3" type="radio" id="pm3"><label for="pm3">PM</label><input class="with-gap" name="tipoPersona3" type="radio" id="pf3"><label for="pf3">PF</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>Deseas copiar la información del principal accionista</p>
+                            <p class="options"><input class="with-gap" name="copiarAccionista3" type="radio" id="yes10"><label for="yes10">Si</label><input class="with-gap" name="copiarAccionista3" type="radio" id="no10"><label for="no10">No</label></p>
+                        </div>
+                    </div>
+                    <div class="col m6 s12">
+                        <div class="input-field col s12"><select><option value="" disabled="disabled" selected="selected">Tipo de domicilio</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></div>
+                        <div class="input-field col s12">
+                            <p>Detalle del patrimonio del obligado solidario<br>¿Cuenta con bienes inmuebles?</p>
+                            <p class="options"><input class="with-gap" name="bienesInmuebles3" type="radio" id="yes11"><label for="yes11">Si</label><input class="with-gap" name="bienesInmuebles3" type="radio" id="no11"><label for="no11">No</label></p>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>El obligado solidario y/o fiador es accionista u obligado solidario de la empresa o PFAE?</p>
+                            <p class="options"><input class="with-gap" name="obligadoEsAccionista3" type="radio" id="yes12"><label for="yes12">Si</label><input class="with-gap" name="obligadoEsAccionista3" type="radio" id="no12"><label for="no12">No</label></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-align"><a href="form-documentos.html" class="waves-effect waves-light grey lighten-2 btn btn-submit btn-submit-step">Siguiente</a></div>
+        </div>
+    </div>
+    <div class="fixed-action-btn toolbar"><a class="btn-help btn-large left"><i class="fa fa-question" aria-hidden="true"></i> <span>Ayuda</span></a>
+        <ul class="help-med-and-up">
+            <li class="waves-effect waves-light"><a href="tel:018002233">Llámanos: <strong>01 800 2233</strong></a></li>
+            <li class="waves-effect waves-light"><a href="whatsapp://send?text=Hola!&phone=+55 6644 3456">Whatsapp: <strong>55 6644 3456</strong></a></li>
+            <li class="waves-effect waves-light"><a href="#!">Tu número de folio: <strong>ER45 1230</strong></a></li>
+        </ul>
+        <ul class="help-mobile">
+            <li class="waves-effect waves-light"><a href="tel:018002233"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+            <li class="waves-effect waves-light"><a href="whatsapp://send?text=Hola!&phone=+55 6644 3456"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li class="waves-effect waves-light"><a href="#!">Tú folio: <strong>ER45 1230</strong></a></li>
+        </ul>
+    </div>
+    <div id="modalComprobanteDomicilio" class="modal medium">
+        <div class="modal-content">
+            <div class="row">
+                <div id="stepDomicilio" class="col m6 s6 inProcess">
+                    <ul class="progress-bullet">
+                        <li class="completed"><span class="bubble clickable" onclick="renderFotoFrente()"><i class="fa fa-check"></i></span></li>
+                        <li>1. Tipo de comprobante de domicilio</li>
+                    </ul>
+                </div>
+                <div id="stepFotoFrente" class="col m6 s6">
+                    <ul class="progress-bullet">
+                        <li><span class="bubble clickable" onclick="renderFotoFrente()"><i class="fa fa-circle"></i></span></li>
+                        <li>2. Foto de frente</li>
+                    </ul>
+                </div>
+                <div id="contentModalSubeComprobanteYDomicilio">
+                    <div id="comprobante">
+                        <div class="col m6 s6"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Recibo de luz</a> <a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Boleta Agua</a></div>
+                        <div class="col m6 s6"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Teléfono</a> <a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Boleta Predial</a></div>
+                    </div>
+                    <div id="fotoFrente" class="hide">
+                        <div class="row">
+                            <div class="col m4 s12"><a onclick="cerrarModalComprobanteAbreSMS()" class="waves-effect waves-light btn btn-submit btn-banorte">Captura con Smartphone <img src="./images/phone_material.png" alt=""></a></div>
+                            <div class="col m4 s12">
+                                <div class="file-field input-field">
+                                    <div class="btn btn-submit btn-banorte"><span>Captura con webcam</span> <img src="./images/video_material.png" alt=""> <input type="file" accept="image/*;capture=camera"></div>
+                                </div>
+                            </div>
+                            <div class="col m4 s12">
+                                <div class="file-field input-field">
+                                    <div class="btn btn-submit btn-banorte"><span>Subir desde PC</span> <img src="./images/upload_material.png" alt=""> <input type="file"></div>
+                                </div>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align wrong"><i class="fa fa-close"></i> Sin dedos</p>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align correct"><i class="fa fa-check"></i> Legible</p>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
+                                <p class="center-align correct"><i class="fa fa-check"></i> Orientación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalEnvioSMS" class="modal small">
+        <div class="modal-content center-align"><input id="celPhoneInput" type="text" placeholder="Celular"> <a href="form.html" class="waves-effect waves-light btn btn-submit sms btn-banorte">Enviar SMS</a></div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container"><a class="grey-text text-lighten-4 right" href="#!">Términos Legales | 2017 Grupo Financiero Banorte. Derechos Reservados.</a></div>
+        </div>
+    </footer>
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/form-garantia.js"></script>
+</body>
+
+</html>

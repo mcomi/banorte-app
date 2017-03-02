@@ -142,15 +142,23 @@
                     <div id="fotoFrente" class="hide">
                         <div class="row">
                             <div class="col m4 s12"><a onclick="cerrarModalComprobanteAbreSMS()" class="waves-effect waves-light btn btn-submit btn-banorte">Captura con Smartphone <img src="./images/phone_material.png" alt=""></a></div>
-                            <div class="col m4 s12"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Captura con webcam <img src="./images/video_material.png" alt=""></a></div>
-                            <div class="col m4 s12"><a href="form.html" class="waves-effect waves-light btn btn-submit btn-banorte">Sube desde tu PC <img src="./images/upload_material.png" alt=""></a></div>
-                            <div class="col m4 s12"><img class="imageComprobante" src="./images/Comprobante.png" alt="">
+                            <div class="col m4 s12">
+                                <div class="file-field input-field">
+                                    <div class="btn btn-submit btn-banorte"><span>Captura con webcam</span> <img src="./images/video_material.png" alt=""> <input type="file" accept="image/*;capture=camera"></div>
+                                </div>
+                            </div>
+                            <div class="col m4 s12">
+                                <div class="file-field input-field">
+                                    <div class="btn btn-submit btn-banorte"><span>Subir desde PC</span> <img src="./images/upload_material.png" alt=""> <input type="file"></div>
+                                </div>
+                            </div>
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
                                 <p class="center-align wrong"><i class="fa fa-close"></i> Sin dedos</p>
                             </div>
-                            <div class="col m4 s12"><img class="imageComprobante" src="./images/Comprobante.png" alt="">
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
                                 <p class="center-align correct"><i class="fa fa-check"></i> Legible</p>
                             </div>
-                            <div class="col m4 s12"><img class="imageComprobante" src="./images/Comprobante.png" alt="">
+                            <div class="col m4 s12"><img class="imageComprobante" src="./images/comprobante.png" alt="">
                                 <p class="center-align correct"><i class="fa fa-check"></i> Orientación</p>
                             </div>
                         </div>
